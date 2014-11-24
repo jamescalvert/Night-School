@@ -1,0 +1,221 @@
+<html>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+function moveup(){
+redball.top=redball.top-5;}
+
+function movedown() {
+redball.top=redball.top+5;}
+
+function moveleft () {
+	if (redball.left >= 5) {
+	redball.left=redball.left-5;}
+	}
+
+
+
+
+
+
+
+function moveright() {
+redball.left=redball.left+5;}
+
+function movesquare() {
+	for (var i=1; i<=50; i++){ 
+		movedown();}
+	
+	for (var i=1; i<=50; i++){
+		moveright();}
+	
+	for(var i=1; i<=50; i++){
+		moveup();}
+	
+	for(var i=1; i<=50; i++){
+		moveleft();}
+}
+	
+	
+	
+	
+
+
+
+function moveupright() {
+moveup();
+moveright();}
+function moveupleft(){
+moveup();
+
+moveleft();
+}
+function movedownright() {
+movedown();
+moveright();}
+
+function   movedownleft() {
+movedown();
+moveleft();}
+
+
+
+
+
+function triangle() {
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+moveleft(); 
+moveleft(); 
+moveleft(); 
+moveleft(); 
+moveleft();
+moveleft();
+moveleft();
+ moveleft();
+ moveleft();
+moveleft();
+moveupright(); 
+moveupright(); 
+moveupright(); 
+moveupright();
+moveupright(); 
+moveupright(); 
+moveupright(); }
+
+
+function move10(){
+for (var i=1;i<=10;i++){
+moveup();}
+}
+function bounce(){
+moveup();
+moveup();
+moveup();
+moveup();
+movedown();
+movedown();
+movedown();
+movedown();
+
+moveup();
+moveup();
+moveup();
+moveup();
+movedown();
+movedown();
+movedown();
+movedown();
+
+moveup();
+moveup();
+moveup();
+moveup();
+movedown();
+movedown();
+movedown();
+movedown();
+}
+function movex(){
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body> 
+
+
+<img src="download.jpg" id="redball">
+<button onclick="moveup()">Move Up</button>
+<button onclick="movedown()">down</button>
+<button onclick="moveleft()">left</button>
+<button onclick="moveright()">right</button>
+<button onclick="movesquare()">square</button>
+<button onclick="moveupright()">upright</button>
+<button onclick="moveupleft()">upleft</button>
+<button onclick="movedownright()">downright</button>
+<button onclick="movedownleft()">downleft</button>
+<button onclick="triangle()">triangle</button>
+<button onclick="move10()">moveup10</button>
+<button onclick="bounce()">bounce<button>
+<button onclick="movex()">move x<button>
+
+</body>
+</html>
+
+      
